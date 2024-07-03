@@ -3,8 +3,8 @@ import 'package:myapp/container_widget.dart';
 import 'package:myapp/row_column/column_widget.dart';
 import 'package:myapp/row_column/row_column_widget.dart';
 import 'package:myapp/row_column/row_widget.dart';
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:3794416253.
 import 'package:myapp/row_column/latihan_row_column_widget.dart';
+import 'package:myapp/row_column/latihan_dua_widget.dart';
 
 void main(){
   runApp(MyApp());
@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+          backgroundColor: Color.fromARGB(255, 107, 106, 106),
           centerTitle: true,
           title: Text("Gibsskuy"),
         ),
-        body: LatihanRowColumnWidget()
+        body: LatihanDuaWidget()
       ),
     );
   }
