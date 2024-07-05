@@ -1,28 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/container_widget.dart';
-import 'package:myapp/row_column/column_widget.dart';
-import 'package:myapp/row_column/row_column_widget.dart';
-import 'package:myapp/row_column/row_widget.dart';
-import 'package:myapp/row_column/latihan_row_column_widget.dart';
-import 'package:myapp/row_column/latihan_dua_widget.dart';
+import 'package:myapp/screens/about_screen.dart';
+import 'package:myapp/screens/home_screen.dart';
+import 'package:myapp/screens/wisata_screen.dart';
 
-void main(){
-  runApp(MyApp());
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 107, 106, 106),
-          centerTitle: true,
-          title: Text("Gibsskuy"),
-        ),
-        body: LatihanDuaWidget()
+      routes:{
+        '/about': (context) => AboutScreen(),
+        '/home': (context)=> HomeScreen(),
+        '/wisata': (context) => ListWisataScreen(),
+        
+      },
+      initialRoute: '/home',
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
+      home: HomeScreen()
     );
   }
 }

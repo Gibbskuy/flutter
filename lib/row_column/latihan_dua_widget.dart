@@ -17,7 +17,10 @@ class LatihanDuaWidget extends StatelessWidget {
                 ),
               ),
             ),
-            color: const Color.fromARGB(255, 0, 0, 0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(244, 164, 202, 24),
+            ),
             margin: EdgeInsets.all(10),
             width: double.infinity,
             height: 100,
@@ -31,11 +34,11 @@ class LatihanDuaWidget extends StatelessWidget {
               children: [
                 Center(
                   child: Image.network(
-                      'https://cdn-profiles.tunein.com/p1674083/images/logod.png?t=2'),
+                      'https://th.bing.com/th/id/OIP.x-T6v-Ml7MhcZhJ5S9wzdwAAAA?rs=1&pid=ImgDetMain%27'),
                 ),
                 Center(
                   child: Image.network(
-                      'https://cdn-profiles.tunein.com/p1674083/images/logod.png?t=2'),
+                      'https://th.bing.com/th/id/OIP.x-T6v-Ml7MhcZhJ5S9wzdwAAAA?rs=1&pid=ImgDetMain%27'),
                 ),
               ],
             ),
@@ -58,7 +61,10 @@ class LatihanDuaWidget extends StatelessWidget {
                 ),
               ],
             ),
-            color: const Color.fromARGB(255, 0, 0, 0),
+           decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(255, 0, 156, 247),
+            ),
             margin: EdgeInsets.all(10),
             width: double.infinity,
             height: 100,
@@ -82,7 +88,10 @@ class LatihanDuaWidget extends StatelessWidget {
                 ),
               ],
             ),
-            color: Color.fromARGB(255, 0, 0, 0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(255, 0, 156, 247),
+            ),
             margin: EdgeInsets.all(10),
             width: double.infinity,
             height: 100,
